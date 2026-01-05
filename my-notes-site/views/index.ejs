@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Notes Site</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>記事小站（Express 分層示範）</h1>
+
+    <section class="card">
+      <h2>新增記事</h2>
+      <form id="noteForm">
+        <label>標題</label>
+        <input name="title" id="title" placeholder="例如：今天學到 HTTP Status Code" />
+
+        <label>內容</label>
+        <textarea name="content" id="content" placeholder="輸入內容..."></textarea>
+
+        <button type="submit">送出</button>
+      </form>
+      <p id="msg"></p>
+    </section>
+
+    <section class="card">
+      <h2>記事列表</h2>
+      <div id="list"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
